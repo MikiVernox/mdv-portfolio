@@ -9,7 +9,7 @@
     </div>
 
     <div class="max-w-7xl mx-auto px-6">
-      <div class="min-h-[300px] border-l border-zinc-800 pl-8 ml-3">
+      <div class="min-h-[300px] border-l border-pink-500 pl-8 ml-3">
         <div class="flex items-center gap-2">
           <div class="w-2 h-2 bg-pink-500 rounded-full -ml-9 mt-1.5 flex-shrink-0"></div>
           <div class="font-mono text-white font-bold">{{ data.experience[0].role }}</div>
