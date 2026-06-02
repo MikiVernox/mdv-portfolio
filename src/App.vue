@@ -1,4 +1,5 @@
 <template>
+  <CustomCursor />
   <div class="bg-black min-h-screen text-white selection:bg-pink-500 selection:text-black">
     <BootSequence v-if="!isBooted" @done="handleBootDone" />
 
@@ -32,6 +33,7 @@ import ExperienceSection from './components/ExperienceSection.vue'
 import CertificationsSection from './components/CertificationsSection.vue'
 import ContactSection from './components/ContactSection.vue'
 import FooterBar from './components/FooterBar.vue'
+import CustomCursor from './components/CustomCursor.vue'
 
 const isBooted = ref(false)
 const isReady = ref(false)
@@ -43,3 +45,12 @@ const handleBootDone = () => {
   }, 100)
 }
 </script>
+
+<style>
+body {
+  cursor: none !important;
+}
+a, button, input, textarea, .cursor-pointer {
+  cursor: none !important;
+}
+</style>
