@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .slide-up-enter-active { transition: all 0.6s ease-out; }
+  .slide-up-enter-from  { opacity: 0; transform: translateY(20px); }
+}
